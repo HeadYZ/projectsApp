@@ -1,9 +1,11 @@
+import ProjectsSidebar from './components/ProjectsSidebar.jsx'
+
 function App() {
-  return (
-    <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
-    </>
-  );
+	return (
+		<main className='h-screen py-8 '>
+			<ProjectsSidebar />
+		</main>
+	)
 }
 
-export default App;
+export default App
