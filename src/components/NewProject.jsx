@@ -16,7 +16,7 @@ const NewProject = ({ onAdd, onCancel }) => {
 			modal.current.open()
 			return
 		}
-		onAdd({ title: enteredTitle, description: enteredDescription, dueData: enteredDueDate })
+		onAdd({ title: enteredTitle, description: enteredDescription, dueDate: enteredDueDate })
 	}
 
 	return (
