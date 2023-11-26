@@ -15,7 +15,7 @@ function App() {
 			id: Math.random() * 100,
 		}
 		setProjectsState(prevState => {
-			return { ...prevState, projects: [...prevState.projects, newProject] }
+			return { ...prevState, projects: [...prevState.projects, newProject], selectedProjectId: undefined }
 		})
 	}
 
@@ -34,7 +34,7 @@ function App() {
 
 	return (
 		<main className='h-screen py-8 flex gap-8  '>
-			<ProjectsSidebar onStartAddProject={handleStartAddProject} />
+			<ProjectsSidebar onStartAddProject={handleStartAddProject} projects={projectsState.projects} />
 			{content}
 		</main>
 	)
